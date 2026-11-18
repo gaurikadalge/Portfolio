@@ -95,14 +95,14 @@ export const PERSONAL_INFO = {
     {
       title: "Comprehensive / AI Systems Resume",
       filename: "Gauri_Vijay_Kadalge_AI_Systems_Resume.pdf",
-      path: "/resumes/Gauri_Vijay_Kadalge_AI_Systems_Resume.pdf",
+      path: "./resumes/Gauri_Vijay_Kadalge_AI_Systems_Resume.pdf",
       description: "Focus on LLM Agents, RAG Pipelines, Backend Architectures, and FinTech Systems",
       recommended: true,
     },
     {
       title: "Robotics & Hardware Systems Resume",
       filename: "Gauri_Vijay_Kadalge_Robotics_IoT_Resume.pdf",
-      path: "/resumes/Gauri_Vijay_Kadalge_Robotics_IoT_Resume.pdf",
+      path: "./resumes/Gauri_Vijay_Kadalge_Robotics_IoT_Resume.pdf",
       description: "Focus on ROS2, Sensor Fusion, Embedded Systems, LoRaWAN, and Edge AI",
       recommended: false,
     }

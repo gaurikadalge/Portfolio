@@ -88,7 +88,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResumeModal }) => {
               {/* Portrait image with smooth bottom blend */}
               <div className="relative overflow-visible">
                 <img
-                  src="/gauri-hero.png"
+                  src="./gauri-hero.png"
                   alt="Gauri Vijay Kadalge — Portrait"
                   className="w-full h-auto object-contain filter drop-shadow-md select-none transition-transform duration-700 hover:scale-[1.01]"
                   loading="eager"
