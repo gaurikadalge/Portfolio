@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@1,400;1,600;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -15,15 +17,16 @@
   }
 }
 
-/* Custom editorial styles */
-.font-display-hero {
-  font-family: 'Libre Baskerville', Georgia, serif;
-  letter-spacing: -0.01em;
+/* Custom editorial styles - Libre Baskerville for classical titles */
+.font-display-hero,
+.font-display,
+.font-baskerville {
+  font-family: 'Libre Baskerville', Georgia, serif !important;
   font-weight: 700;
 }
 
 .font-editorial-condensed {
-  font-family: 'Libre Baskerville', Georgia, serif;
+  font-family: 'Libre Baskerville', Georgia, serif !important;
   font-weight: 700;
 }
 
@@ -34,7 +37,7 @@
 }
 
 .font-brand {
-  font-family: 'Libre Baskerville', Georgia, serif;
+  font-family: 'Libre Baskerville', Georgia, serif !important;
   font-weight: 700;
 }
 

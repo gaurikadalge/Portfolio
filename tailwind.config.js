@@ -9,6 +9,7 @@ export default {
       fontFamily: {
         serif: ['"Libre Baskerville"', 'Georgia', 'serif'],
         display: ['"Libre Baskerville"', 'Georgia', 'serif'],
+        baskerville: ['"Libre Baskerville"', 'Georgia', 'serif'],
         script: ['"Cormorant Garamond"', 'serif'],
         sans: ['"Plus Jakarta Sans"', 'Inter', 'sans-serif'],
         mono: ['"JetBrains Mono"', 'monospace'],
