@@ -47,19 +47,19 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResumeModal }) => {
         </div>
 
         {/* Central Composition: Left Title - Center Portrait - Right Subtitle */}
-        <div className="relative grid grid-cols-1 lg:grid-cols-12 items-center gap-8 my-auto pt-4 pb-8">
-          {/* Left Column: Bold Editorial Headline */}
-          <div className="lg:col-span-4 z-20 text-center lg:text-left order-2 lg:order-1">
+        <div className="relative grid grid-cols-1 lg:grid-cols-12 items-center gap-6 lg:gap-4 my-auto pt-4 pb-8">
+          {/* Left Column: Bold Condensed Editorial Headline */}
+          <div className="lg:col-span-3 xl:col-span-3 z-20 text-center lg:text-left order-2 lg:order-1">
             <div className="space-y-1">
-              <h2 className="font-display-hero text-4xl sm:text-6xl xl:text-7xl uppercase leading-[0.95] text-[#0F0E0D] tracking-tight">
+              <h2 className="font-display-hero text-5xl sm:text-6xl xl:text-7xl uppercase leading-[0.9] text-[#0F0E0D] tracking-tight">
                 I AM
               </h2>
-              <h1 className="font-display-hero text-5xl sm:text-7xl xl:text-8xl uppercase leading-[0.95] text-[#0F0E0D] tracking-tight">
+              <h1 className="font-display-hero text-6xl sm:text-7xl xl:text-8xl uppercase leading-[0.9] text-[#0F0E0D] tracking-tight">
                 GAURI
               </h1>
             </div>
 
-            <p className="mt-5 text-sm sm:text-base text-stone-600 font-normal leading-relaxed max-w-md mx-auto lg:mx-0">
+            <p className="mt-5 text-xs sm:text-sm text-stone-600 font-normal leading-relaxed max-w-sm mx-auto lg:mx-0">
               {PERSONAL_INFO.tagline}
             </p>
 
@@ -76,21 +76,21 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResumeModal }) => {
             </div>
           </div>
 
-          {/* Center Column: Portrait overlapping seamlessly into the bottom fade */}
-          <div className="lg:col-span-4 z-10 flex justify-center order-1 lg:order-2">
-            <div className="relative w-64 sm:w-80 md:w-96 lg:w-[420px] max-w-full">
+          {/* Center Column: Portrait displaying full blazer, shoulders and natural presence */}
+          <div className="lg:col-span-6 xl:col-span-6 z-10 flex justify-center order-1 lg:order-2">
+            <div className="relative w-full max-w-[340px] sm:max-w-[420px] md:max-w-[480px] lg:max-w-[520px]">
               {/* Subtle halo ring */}
               <div 
-                className="absolute inset-0 rounded-full bg-amber-400/20 blur-3xl scale-95 pointer-events-none"
+                className="absolute inset-0 rounded-full bg-amber-400/25 blur-3xl scale-95 pointer-events-none"
                 aria-hidden="true"
               />
 
-              {/* Portrait image with smooth bottom blend */}
-              <div className="relative overflow-visible">
+              {/* Portrait image with full blazer preserved */}
+              <div className="relative overflow-visible flex justify-center">
                 <img
                   src="./gauri-hero.png"
                   alt="Gauri Vijay Kadalge — Portrait"
-                  className="w-full h-auto object-contain filter drop-shadow-md select-none transition-transform duration-700 hover:scale-[1.01]"
+                  className="w-full h-auto max-h-[580px] sm:max-h-[640px] lg:max-h-[680px] object-contain filter drop-shadow-md select-none transition-transform duration-700 hover:scale-[1.01]"
                   loading="eager"
                   decoding="async"
                 />
@@ -99,17 +99,17 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResumeModal }) => {
           </div>
 
           {/* Right Column: Roles, Specialty & Quick Description */}
-          <div className="lg:col-span-4 z-20 text-center lg:text-left order-3">
+          <div className="lg:col-span-3 xl:col-span-3 z-20 text-center lg:text-left order-3">
             <div className="space-y-1">
-              <h3 className="font-display-hero text-2xl sm:text-3xl xl:text-4xl uppercase leading-tight text-[#0F0E0D] tracking-tight">
+              <h3 className="font-display-hero text-2xl sm:text-3xl xl:text-4xl uppercase leading-[0.95] text-[#0F0E0D] tracking-tight">
                 AI SYSTEMS &
               </h3>
-              <h3 className="font-display-hero text-2xl sm:text-3xl xl:text-4xl uppercase leading-tight text-[#0F0E0D] tracking-tight text-amber-700">
+              <h3 className="font-display-hero text-2xl sm:text-3xl xl:text-4xl uppercase leading-[0.95] text-amber-700 tracking-tight">
                 ROBOTICS DEV
               </h3>
             </div>
 
-            <p className="mt-4 text-xs sm:text-sm text-stone-600 font-medium leading-relaxed max-w-md mx-auto lg:mx-0">
+            <p className="mt-4 text-xs sm:text-sm text-stone-600 font-medium leading-relaxed max-w-sm mx-auto lg:mx-0">
               Specialized in Multi-Agent LLMs, Hybrid RAG pipelines, Autonomous ROS2 Robotics, and FinTech systems. B.Tech Computer Science & Artificial Intelligence at Vishwakarma Institute of Technology.
             </p>
 
@@ -134,7 +134,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResumeModal }) => {
 
             {/* Academic Snapshot Pill */}
             <div className="mt-6 pt-5 border-t border-stone-200/80 flex items-center justify-center lg:justify-start gap-4 text-xs text-stone-500">
-              <span>B.Tech AI '27</span>
+              <span className="font-semibold text-stone-800">B.Tech AI '28</span>
               <span>•</span>
               <a 
                 href={PERSONAL_INFO.contact.github}

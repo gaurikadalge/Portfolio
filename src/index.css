@@ -17,9 +17,16 @@
 
 /* Custom editorial styles */
 .font-display-hero {
-  font-family: 'Syne', -apple-system, BlinkMacSystemFont, sans-serif;
-  letter-spacing: -0.04em;
-  font-weight: 800;
+  font-family: 'Oswald', 'Plus Jakarta Sans', sans-serif;
+  letter-spacing: 0.01em;
+  font-weight: 700;
+}
+
+.font-editorial-condensed {
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .font-editorial-script {
