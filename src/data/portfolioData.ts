@@ -191,6 +191,41 @@ export const PROJECTS: Project[] = [
     featured: true,
   },
   {
+    id: "autonomous-navigation-robot",
+    title: "Autonomous Navigation Robot — MAHE Mobility Challenge",
+    shortDescription: "Modular ROS2 autonomous navigation robot with LiDAR and computer vision multi-sensor fusion for dynamic obstacle avoidance and SLAM.",
+    fullDescription: "Engineered for the national MAHE Mobility Challenge, this autonomous mobile robot utilizes a modular ROS2 Humble architecture. It fuses 2D LiDAR planar scans with monocular visual odometry via an Extended Kalman Filter (EKF), executing real-time Simultaneous Localization and Mapping (SLAM) and adaptive path planning.",
+    category: "Hardware & Robotics",
+    tags: ["ROS2", "LiDAR", "Computer Vision", "Sensor Fusion", "Nav2", "SLAM", "Python/C++"],
+    metric: "2nd Runner Up — MAHE Mobility Challenge",
+    status: "National 2nd Runner Up",
+    problemStatement: "Autonomous navigation in unstructured, dynamic environments suffers from sensor drift, wheel slip, and sudden blind-spot obstructions when relying on single-modality sensors.",
+    objectives: [
+      "Architect a distributed ROS2 node architecture separating hardware drivers, perception, localization, and control.",
+      "Implement multi-sensor fusion using Extended Kalman Filtering to combine wheel encoders, IMU, and LiDAR scans.",
+      "Configure Nav2 costmaps with dynamic obstacle inflation for real-time path replanning.",
+      "Deliver sub-50ms control loop latency to motor controllers under high sensor ingress."
+    ],
+    systemArchitecture: "Hardware layer interfaces with motor encoders and LiDAR via micro-ROS. Perception nodes process point clouds and camera feeds, feeding into an EKF state estimator. Nav2 planner generates global paths using A*, while DWB local planner computes twist commands for obstacle avoidance, streamed over DDS.",
+    technologiesUsed: [
+      { domain: "Robotics Stack", items: ["ROS2 Humble", "Nav2 Navigation Stack", "SLAM Toolbox", "Gazebo Simulator"] },
+      { domain: "Sensors & Perception", items: ["2D LiDAR", "Depth / Monocular Vision", "IMU 9-DOF", "Sensor Fusion (EKF)"] },
+      { domain: "Languages & Tools", items: ["C++17", "Python", "rviz2", "Linux Ubuntu Server"] },
+    ],
+    keyFeatures: [
+      "Real-time SLAM generating high-precision 2D occupancy grid maps of unknown indoor arenas.",
+      "Adaptive obstacle inflation costmaps preventing robot collision with moving human obstacles.",
+      "Sensor fusion pipeline maintaining centimeter-level localization accuracy despite wheel slippage.",
+      "Recovery behaviors enabling autonomous un-trapping and path renegotiation."
+    ],
+    verifiedResults: [
+      "Awarded 2nd Runner Up at the MAHE Mobility Challenge (April 2026).",
+      "Successfully executed complex track navigation with zero collisions in high-density dynamic obstacle trials."
+    ],
+    imageThumbnail: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=900&q=80",
+    featured: true,
+  },
+  {
     id: "offair-sovereign-ai",
     title: "OFFAIR — Sovereign AI Local Workbench (SIH 2026)",
     shortDescription: "Completely air-gapped sovereign AI workbench running local multi-model LLM routing, ChromaDB RAG, and isolated Docker code execution.",
@@ -225,41 +260,6 @@ export const PROJECTS: Project[] = [
     ],
     githubUrl: "https://github.com/gaurikadalge/OFFAIR",
     imageThumbnail: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=900&q=80",
-    featured: true,
-  },
-  {
-    id: "autonomous-navigation-robot",
-    title: "Autonomous Navigation Robot — MAHE Mobility Challenge",
-    shortDescription: "Modular ROS2 autonomous navigation robot with LiDAR and computer vision multi-sensor fusion for dynamic obstacle avoidance and SLAM.",
-    fullDescription: "Engineered for the national MAHE Mobility Challenge, this autonomous mobile robot utilizes a modular ROS2 Humble architecture. It fuses 2D LiDAR planar scans with monocular visual odometry via an Extended Kalman Filter (EKF), executing real-time Simultaneous Localization and Mapping (SLAM) and adaptive path planning.",
-    category: "Hardware & Robotics",
-    tags: ["ROS2", "LiDAR", "Computer Vision", "Sensor Fusion", "Nav2", "SLAM", "Python/C++"],
-    metric: "2nd Runner Up — MAHE Mobility Challenge",
-    status: "National 2nd Runner Up",
-    problemStatement: "Autonomous navigation in unstructured, dynamic environments suffers from sensor drift, wheel slip, and sudden blind-spot obstructions when relying on single-modality sensors.",
-    objectives: [
-      "Architect a distributed ROS2 node architecture separating hardware drivers, perception, localization, and control.",
-      "Implement multi-sensor fusion using Extended Kalman Filtering to combine wheel encoders, IMU, and LiDAR scans.",
-      "Configure Nav2 costmaps with dynamic obstacle inflation for real-time path replanning.",
-      "Deliver sub-50ms control loop latency to motor controllers under high sensor ingress."
-    ],
-    systemArchitecture: "Hardware layer interfaces with motor encoders and LiDAR via micro-ROS. Perception nodes process point clouds and camera feeds, feeding into an EKF state estimator. Nav2 planner generates global paths using A*, while DWB local planner computes twist commands for obstacle avoidance, streamed over DDS.",
-    technologiesUsed: [
-      { domain: "Robotics Stack", items: ["ROS2 Humble", "Nav2 Navigation Stack", "SLAM Toolbox", "Gazebo Simulator"] },
-      { domain: "Sensors & Perception", items: ["2D LiDAR", "Depth / Monocular Vision", "IMU 9-DOF", "Sensor Fusion (EKF)"] },
-      { domain: "Languages & Tools", items: ["C++17", "Python", "rviz2", "Linux Ubuntu Server"] },
-    ],
-    keyFeatures: [
-      "Real-time SLAM generating high-precision 2D occupancy grid maps of unknown indoor arenas.",
-      "Adaptive obstacle inflation costmaps preventing robot collision with moving human obstacles.",
-      "Sensor fusion pipeline maintaining centimeter-level localization accuracy despite wheel slippage.",
-      "Recovery behaviors enabling autonomous un-trapping and path renegotiation."
-    ],
-    verifiedResults: [
-      "Awarded 2nd Runner Up at the MAHE Mobility Challenge (April 2026).",
-      "Successfully executed complex track navigation with zero collisions in high-density dynamic obstacle trials."
-    ],
-    imageThumbnail: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=900&q=80",
     featured: true,
   },
   {
