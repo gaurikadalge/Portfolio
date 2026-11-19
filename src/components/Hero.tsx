@@ -76,21 +76,21 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResumeModal }) => {
             </div>
           </div>
 
-          {/* Center Column: Portrait displaying full blazer and shoulders exactly as uploaded */}
+          {/* Center Column: Portrait zoomed in, displaying full blazer and shoulders */}
           <div className="lg:col-span-4 z-10 flex justify-center order-1 lg:order-2">
-            <div className="relative w-full max-w-[320px] sm:max-w-[380px] md:max-w-[420px] lg:max-w-[460px]">
+            <div className="relative w-full max-w-[360px] sm:max-w-[440px] md:max-w-[480px] lg:max-w-[540px] xl:max-w-[580px] -my-2 sm:-my-4">
               {/* Subtle warm halo ring */}
               <div 
-                className="absolute inset-0 rounded-full bg-amber-400/25 blur-3xl scale-95 pointer-events-none"
+                className="absolute inset-0 rounded-full bg-amber-400/30 blur-3xl scale-105 pointer-events-none"
                 aria-hidden="true"
               />
 
-              {/* Portrait image with full blazer preserved exactly as uploaded */}
+              {/* Portrait image zoomed in with full blazer preserved */}
               <div className="relative overflow-visible flex justify-center">
                 <img
                   src="./gauri-hero.png"
                   alt="Gauri Vijay Kadalge — Portrait"
-                  className="w-full h-auto object-contain filter drop-shadow-md select-none transition-transform duration-700 hover:scale-[1.01]"
+                  className="w-full h-auto max-h-[580px] sm:max-h-[640px] lg:max-h-[700px] object-contain filter drop-shadow-md select-none transition-transform duration-700 hover:scale-[1.02]"
                   loading="eager"
                   decoding="async"
                 />
