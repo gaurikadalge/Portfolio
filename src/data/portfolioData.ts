@@ -87,7 +87,7 @@ export const PERSONAL_INFO = {
   contact: {
     email: "gaurikadalge02@gmail.com",
     github: "https://github.com/gaurikadalge",
-    linkedin: "https://www.linkedin.com/in/gauri-kadalge",
+    linkedin: "https://www.linkedin.com/in/gauri-kadalge-2847b3336",
     location: "Pune, Maharashtra, India",
     phone: "+91 8378950406",
   },

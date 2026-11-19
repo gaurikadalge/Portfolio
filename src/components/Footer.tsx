@@ -68,7 +68,7 @@ export const Footer: React.FC = () => {
                 className="inline-flex items-center gap-2 hover:text-white transition-colors"
               >
                 <Linkedin size={14} />
-                <span>linkedin.com/in/gauri-kadalge</span>
+                <span>linkedin.com/in/gauri-kadalge-2847b3336</span>
               </a>
               <a
                 href={`mailto:${PERSONAL_INFO.contact.email}`}

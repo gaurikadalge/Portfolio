@@ -12,7 +12,7 @@ Designed with an editorial aesthetic featuring modern typography, warm ambient l
 
 - **Live URL**: [gaurikadalge.github.io](https://gaurikadalge.github.io)
 - **GitHub**: [@gaurikadalge](https://github.com/gaurikadalge)
-- **LinkedIn**: [in/gauri-kadalge](https://www.linkedin.com/in/gauri-kadalge)
+- **LinkedIn**: [in/gauri-kadalge-2847b3336](https://www.linkedin.com/in/gauri-kadalge-2847b3336)
 
 ---
 

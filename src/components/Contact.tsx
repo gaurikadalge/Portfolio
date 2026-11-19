@@ -113,7 +113,7 @@ export const Contact: React.FC = () => {
                     LinkedIn
                   </div>
                   <div className="text-sm font-bold text-stone-900">
-                    in/gauri-kadalge
+                    in/gauri-kadalge-2847b3336
                   </div>
                 </div>
               </div>
