@@ -26,7 +26,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResumeModal }) => {
 
       <div className="relative z-10 max-w-7xl mx-auto px-5 sm:px-8 w-full flex-1 flex flex-col justify-between">
         {/* Top Script Accent + Availability Pill */}
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-4 sm:pt-6 mb-2 sm:mb-4">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-4 sm:pt-6 mb-4 sm:mb-6">
           {/* Status Badge */}
           <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-white/80 border border-stone-200/90 shadow-sm backdrop-blur-md">
             <span className="relative flex h-2.5 w-2.5">
@@ -40,36 +40,36 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResumeModal }) => {
 
           {/* Editorial Script Accent: "Hey, there" */}
           <div className="text-center sm:text-right">
-            <span className="font-editorial-script text-4xl sm:text-5xl lg:text-6xl text-[#1C1A18] tracking-tight">
+            <span className="font-editorial-script text-5xl sm:text-6xl lg:text-7xl xl:text-8xl text-[#1C1A18] tracking-normal">
               Hey, there
             </span>
           </div>
         </div>
 
         {/* Central Composition: Left Title - Center Portrait - Right Subtitle */}
-        <div className="relative grid grid-cols-1 lg:grid-cols-12 items-center gap-6 lg:gap-4 my-auto pt-4 pb-8">
+        <div className="relative grid grid-cols-1 lg:grid-cols-12 items-center gap-8 lg:gap-6 my-auto pt-2 pb-8">
           {/* Left Column: Bold Condensed Editorial Headline in Libre Baskerville */}
-          <div className="lg:col-span-3 xl:col-span-3 z-20 text-center lg:text-left order-2 lg:order-1">
+          <div className="lg:col-span-4 z-20 text-center lg:text-left order-2 lg:order-1">
             <div className="space-y-1">
-              <h2 className="font-baskerville text-4xl sm:text-5xl xl:text-6xl uppercase leading-tight text-[#0F0E0D] font-bold tracking-tight">
+              <h2 className="font-baskerville text-5xl sm:text-6xl lg:text-7xl xl:text-8xl uppercase leading-[0.95] text-[#0F0E0D] font-bold tracking-tight">
                 I AM
               </h2>
-              <h1 className="font-baskerville text-5xl sm:text-6xl xl:text-7xl uppercase leading-tight text-[#0F0E0D] font-bold tracking-tight">
+              <h1 className="font-baskerville text-6xl sm:text-7xl lg:text-8xl xl:text-9xl uppercase leading-[0.95] text-[#0F0E0D] font-bold tracking-tight">
                 GAURI
               </h1>
             </div>
 
-            <p className="mt-5 text-xs sm:text-sm text-stone-600 font-normal leading-relaxed max-w-sm mx-auto lg:mx-0">
+            <p className="mt-6 text-sm sm:text-base text-stone-600 font-normal leading-relaxed max-w-sm mx-auto lg:mx-0">
               {PERSONAL_INFO.tagline}
             </p>
 
             {/* Quick Badges */}
             <div className="mt-6 flex flex-wrap items-center justify-center lg:justify-start gap-2">
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-md text-xs font-semibold bg-stone-100 text-stone-800 border border-stone-200">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-semibold bg-stone-100 text-stone-800 border border-stone-200">
                 <Sparkles size={12} className="text-amber-600" />
                 9.2 CGPA • VIT Pune
               </span>
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-md text-xs font-semibold bg-amber-50 text-amber-900 border border-amber-200">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-semibold bg-amber-50 text-amber-900 border border-amber-200">
                 <Award size={12} className="text-amber-600" />
                 Patent Pending
               </span>
@@ -77,9 +77,9 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResumeModal }) => {
           </div>
 
           {/* Center Column: Portrait displaying full blazer and shoulders exactly as uploaded */}
-          <div className="lg:col-span-6 xl:col-span-6 z-10 flex justify-center order-1 lg:order-2">
-            <div className="relative w-full max-w-[360px] sm:max-w-[420px] md:max-w-[460px] lg:max-w-[480px]">
-              {/* Subtle halo ring */}
+          <div className="lg:col-span-4 z-10 flex justify-center order-1 lg:order-2">
+            <div className="relative w-full max-w-[320px] sm:max-w-[380px] md:max-w-[420px] lg:max-w-[460px]">
+              {/* Subtle warm halo ring */}
               <div 
                 className="absolute inset-0 rounded-full bg-amber-400/25 blur-3xl scale-95 pointer-events-none"
                 aria-hidden="true"
@@ -99,25 +99,25 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResumeModal }) => {
           </div>
 
           {/* Right Column: Roles, Specialty & Quick Description in Libre Baskerville */}
-          <div className="lg:col-span-3 xl:col-span-3 z-20 text-center lg:text-left order-3">
+          <div className="lg:col-span-4 z-20 text-center lg:text-left order-3">
             <div className="space-y-1">
-              <h3 className="font-baskerville text-2xl sm:text-3xl xl:text-4xl uppercase leading-tight text-[#0F0E0D] font-bold tracking-tight">
+              <h3 className="font-baskerville text-3xl sm:text-4xl xl:text-5xl uppercase leading-[1.05] text-[#0F0E0D] font-bold tracking-tight">
                 AI SYSTEMS &
               </h3>
-              <h3 className="font-baskerville text-2xl sm:text-3xl xl:text-4xl uppercase leading-tight text-amber-700 font-bold tracking-tight">
+              <h3 className="font-baskerville text-3xl sm:text-4xl xl:text-5xl uppercase leading-[1.05] text-amber-700 font-bold tracking-tight">
                 ROBOTICS DEV
               </h3>
             </div>
 
-            <p className="mt-4 text-xs sm:text-sm text-stone-600 font-medium leading-relaxed max-w-sm mx-auto lg:mx-0">
+            <p className="mt-5 text-xs sm:text-sm text-stone-600 font-medium leading-relaxed max-w-sm mx-auto lg:mx-0">
               Specialized in Multi-Agent LLMs, Hybrid RAG pipelines, Autonomous ROS2 Robotics, and FinTech systems. B.Tech Computer Science & Artificial Intelligence at Vishwakarma Institute of Technology.
             </p>
 
             {/* CTAs */}
-            <div className="mt-7 flex flex-wrap items-center justify-center lg:justify-start gap-3">
+            <div className="mt-8 flex flex-wrap items-center justify-center lg:justify-start gap-3">
               <a
                 href="#projects"
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-xs font-bold uppercase tracking-wider text-white bg-[#0F0E0D] hover:bg-stone-800 transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5"
+                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full text-xs font-bold uppercase tracking-wider text-white bg-[#0F0E0D] hover:bg-stone-800 transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5"
               >
                 <span>View Projects</span>
                 <ArrowDown size={14} />
@@ -125,7 +125,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResumeModal }) => {
 
               <button
                 onClick={onOpenResumeModal}
-                className="inline-flex items-center gap-2 px-5 py-3 rounded-full text-xs font-bold uppercase tracking-wider text-stone-800 bg-white hover:bg-stone-50 border border-stone-300 transition-all shadow-sm hover:shadow hover:-translate-y-0.5"
+                className="inline-flex items-center gap-2 px-5 py-3.5 rounded-full text-xs font-bold uppercase tracking-wider text-stone-800 bg-white hover:bg-stone-50 border border-stone-300 transition-all shadow-sm hover:shadow hover:-translate-y-0.5"
               >
                 <Download size={14} className="text-amber-600" />
                 <span>Download CV</span>
@@ -133,7 +133,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResumeModal }) => {
             </div>
 
             {/* Academic Snapshot Pill */}
-            <div className="mt-6 pt-5 border-t border-stone-200/80 flex items-center justify-center lg:justify-start gap-4 text-xs text-stone-500">
+            <div className="mt-7 pt-5 border-t border-stone-200/80 flex items-center justify-center lg:justify-start gap-4 text-xs text-stone-500">
               <span className="font-semibold text-stone-800">B.Tech AI '28</span>
               <span>•</span>
               <a 
