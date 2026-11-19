@@ -7,9 +7,9 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        serif: ['"Playfair Display"', 'Georgia', 'serif'],
+        serif: ['"Libre Baskerville"', 'Georgia', 'serif'],
+        display: ['"Libre Baskerville"', 'Georgia', 'serif'],
         script: ['"Cormorant Garamond"', 'serif'],
-        display: ['"Syne"', '"Space Grotesk"', 'sans-serif'],
         sans: ['"Plus Jakarta Sans"', 'Inter', 'sans-serif'],
         mono: ['"JetBrains Mono"', 'monospace'],
       },

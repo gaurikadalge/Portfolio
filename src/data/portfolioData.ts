@@ -65,7 +65,7 @@ export const PERSONAL_INFO = {
   education: {
     institution: "Vishwakarma Institute of Technology, Pune",
     degree: "B.Tech in Computer Science and Engineering (Artificial Intelligence)",
-    timeline: "2023 – Present",
+    timeline: "2024 – Present",
     cgpa: "9.2 / 10.0",
     highlights: [
       "Specialized in Artificial Intelligence, Multi-Agent Systems, Autonomous Robotics and Data Engineering",

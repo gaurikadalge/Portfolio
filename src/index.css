@@ -17,15 +17,13 @@
 
 /* Custom editorial styles */
 .font-display-hero {
-  font-family: 'Oswald', 'Plus Jakarta Sans', sans-serif;
-  letter-spacing: 0.01em;
+  font-family: 'Libre Baskerville', Georgia, serif;
+  letter-spacing: -0.01em;
   font-weight: 700;
 }
 
 .font-editorial-condensed {
-  font-family: 'Oswald', sans-serif;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
+  font-family: 'Libre Baskerville', Georgia, serif;
   font-weight: 700;
 }
 
@@ -36,8 +34,8 @@
 }
 
 .font-brand {
-  font-family: 'Playfair Display', Georgia, serif;
-  font-weight: 900;
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-weight: 700;
 }
 
 /* Background warm radiant glow */
